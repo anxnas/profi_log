@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html lang="ru" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Profi Log documentation &#8212; документация Profi Log 0.1.0</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=6ff560e8"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=9bfe3ffa"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="profi-log-documentation">
+<h1>Profi Log documentation<a class="headerlink" href="#profi-log-documentation" title="Ссылка на этот заголовок">¶</a></h1>
+</section>
+<section id="masterlogger">
+<h1>MasterLogger<a class="headerlink" href="#masterlogger" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="profi_log.MasterLogger">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">profi_log.</span></span><span class="sig-name descname"><span class="pre">MasterLogger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_file_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_bytes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">104857600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backup_count</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'utf-8'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'INFO'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#profi_log.MasterLogger" title="Link to this definition">¶</a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Продвинутый класс для настройки и управления логированием.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="profi_log.MasterLogger.critical">
+<span class="sig-name descname"><span class="pre">critical</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.critical"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#profi_log.MasterLogger.critical" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="profi_log.MasterLogger.debug">
+<span class="sig-name descname"><span class="pre">debug</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.debug"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#profi_log.MasterLogger.debug" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="profi_log.MasterLogger.error">
+<span class="sig-name descname"><span class="pre">error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.error"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#profi_log.MasterLogger.error" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="profi_log.MasterLogger.info">
+<span class="sig-name descname"><span class="pre">info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.info"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#profi_log.MasterLogger.info" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="profi_log.MasterLogger.log_exception">
+<span class="sig-name descname"><span class="pre">log_exception</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_info</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.log_exception"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#profi_log.MasterLogger.log_exception" title="Link to this definition">¶</a></dt>
+<dd><p>Логирование исключения с полной трассировкой стека.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>message</strong> (<em>str</em>) – Сообщение об ошибке.</p></li>
+<li><p><strong>exc_info</strong> (<em>bool</em><em>, </em><em>optional</em>) – Флаг для включения информации об исключении. По умолчанию True.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Использование:
+try:</p>
+<blockquote>
+<div><p># код, который может вызвать исключение</p>
+</div></blockquote>
+<dl class="simple">
+<dt>except Exception as e:</dt><dd><p>logger.log_exception(«Произошла ошибка»)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="profi_log.MasterLogger.log_function_call">
+<span class="sig-name descname"><span class="pre">log_function_call</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.log_function_call"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#profi_log.MasterLogger.log_function_call" title="Link to this definition">¶</a></dt>
+<dd><p>Декоратор для автоматического логирования вызовов функций.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>log_args</strong> (<em>bool</em><em>, </em><em>optional</em>) – Флаг для логирования аргументов функции. По умолчанию True.</p></li>
+<li><p><strong>log_result</strong> (<em>bool</em><em>, </em><em>optional</em>) – Флаг для логирования результата функции. По умолчанию True.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат<span class="colon">:</span></dt>
+<dd class="field-even"><p>Декорированная функция.</p>
+</dd>
+<dt class="field-odd">Тип результата<span class="colon">:</span></dt>
+<dd class="field-odd"><p>function</p>
+</dd>
+</dl>
+<p>Использование:
+&#64;logger.log_function_call(log_args=True, log_result=False)
+def my_function(arg1, arg2):</p>
+<blockquote>
+<div><p># код функции</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="profi_log.MasterLogger.setup_colored_console_logging">
+<span class="sig-name descname"><span class="pre">setup_colored_console_logging</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">format_string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.setup_colored_console_logging"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#profi_log.MasterLogger.setup_colored_console_logging" title="Link to this definition">¶</a></dt>
+<dd><p>Настройка цветного консольного логирования.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>format_string</strong> (<em>str</em><em>, </em><em>optional</em>) – Строка форматирования для логов.
+По умолчанию „%(log_color)s%(asctime)s - %(name)s - %(levelname)s - %(message)s“.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="profi_log.MasterLogger.setup_email_logging">
+<span class="sig-name descname"><span class="pre">setup_email_logging</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">smtp_server</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sender</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recipients</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subject_prefix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Критическая</span> <span class="pre">ошибка'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.setup_email_logging"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#profi_log.MasterLogger.setup_email_logging" title="Link to this definition">¶</a></dt>
+<dd><p>Настройка отправки критических логов по электронной почте.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>smtp_server</strong> (<em>str</em>) – SMTP сервер.</p></li>
+<li><p><strong>port</strong> (<em>int</em>) – Порт SMTP сервера.</p></li>
+<li><p><strong>sender</strong> (<em>str</em>) – Email отправителя.</p></li>
+<li><p><strong>password</strong> (<em>str</em>) – Пароль отправителя.</p></li>
+<li><p><strong>recipients</strong> (<em>list</em>) – Список получателей.</p></li>
+<li><p><strong>subject_prefix</strong> (<em>str</em><em>, </em><em>optional</em>) – Префикс для темы письма. По умолчанию «Критическая ошибка».</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="profi_log.MasterLogger.setup_file_logging">
+<span class="sig-name descname"><span class="pre">setup_file_logging</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.setup_file_logging"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#profi_log.MasterLogger.setup_file_logging" title="Link to this definition">¶</a></dt>
+<dd><p>Настройка логирования в файл.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="profi_log.MasterLogger.temporary_log_level">
+<span class="sig-name descname"><span class="pre">temporary_log_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.temporary_log_level"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#profi_log.MasterLogger.temporary_log_level" title="Link to this definition">¶</a></dt>
+<dd><p>Контекстный менеджер для временного изменения уровня логирования.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>level</strong> (<em>str</em>) – Временный уровень логирования.</p>
+</dd>
+<dt class="field-even">Yields<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p>Использование:
+with logger.temporary_log_level(„DEBUG“):</p>
+<blockquote>
+<div><p># Здесь логирование будет на уровне DEBUG</p>
+</div></blockquote>
+<p># После выхода из контекста уровень вернется к предыдущему</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="profi_log.MasterLogger.warning">
+<span class="sig-name descname"><span class="pre">warning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.warning"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#profi_log.MasterLogger.warning" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<section id="id1">
+<h2>Инициализация<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h2>
+<dl class="py method">
+<dt class="sig sig-object py" id="profi_log.MasterLogger.__init__">
+<span class="sig-prename descclassname"><span class="pre">MasterLogger.</span></span><span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_file_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_bytes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">104857600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backup_count</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'utf-8'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'INFO'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.__init__"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#profi_log.MasterLogger.__init__" title="Link to this definition">¶</a></dt>
+<dd><p>Инициализация MasterLogger.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>log_file_name</strong> (<em>str</em>) – Имя файла для логов.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Имя логгера. Если не указано, используется корневой логгер.</p></li>
+<li><p><strong>max_bytes</strong> (<em>int</em>) – Максимальный размер файла логов в байтах. По умолчанию 100 МБ.</p></li>
+<li><p><strong>backup_count</strong> (<em>int</em>) – Количество резервных копий файлов логов. По умолчанию 5.</p></li>
+<li><p><strong>encoding</strong> (<em>str</em>) – Кодировка файла логов. По умолчанию „utf-8“.</p></li>
+<li><p><strong>level</strong> (<em>str</em>) – Уровень логирования. По умолчанию „INFO“.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="id2">
+<h2>Методы настройки<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
+<section id="setup-file-logging">
+<h3>setup_file_logging<a class="headerlink" href="#setup-file-logging" title="Ссылка на этот заголовок">¶</a></h3>
+<dl class="py method">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-prename descclassname"><span class="pre">MasterLogger.</span></span><span class="sig-name descname"><span class="pre">setup_file_logging</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.setup_file_logging"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#id0" title="Link to this definition">¶</a></dt>
+<dd><p>Настройка логирования в файл.</p>
+</dd></dl>
+
+</section>
+<section id="setup-colored-console-logging">
+<h3>setup_colored_console_logging<a class="headerlink" href="#setup-colored-console-logging" title="Ссылка на этот заголовок">¶</a></h3>
+<dl class="py method">
+<dt class="sig sig-object py" id="id3">
+<span class="sig-prename descclassname"><span class="pre">MasterLogger.</span></span><span class="sig-name descname"><span class="pre">setup_colored_console_logging</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">format_string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.setup_colored_console_logging"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#id3" title="Link to this definition">¶</a></dt>
+<dd><p>Настройка цветного консольного логирования.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>format_string</strong> (<em>str</em><em>, </em><em>optional</em>) – Строка форматирования для логов.
+По умолчанию „%(log_color)s%(asctime)s - %(name)s - %(levelname)s - %(message)s“.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="setup-email-logging">
+<h3>setup_email_logging<a class="headerlink" href="#setup-email-logging" title="Ссылка на этот заголовок">¶</a></h3>
+<dl class="py method">
+<dt class="sig sig-object py" id="id4">
+<span class="sig-prename descclassname"><span class="pre">MasterLogger.</span></span><span class="sig-name descname"><span class="pre">setup_email_logging</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">smtp_server</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sender</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recipients</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subject_prefix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Критическая</span> <span class="pre">ошибка'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.setup_email_logging"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#id4" title="Link to this definition">¶</a></dt>
+<dd><p>Настройка отправки критических логов по электронной почте.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>smtp_server</strong> (<em>str</em>) – SMTP сервер.</p></li>
+<li><p><strong>port</strong> (<em>int</em>) – Порт SMTP сервера.</p></li>
+<li><p><strong>sender</strong> (<em>str</em>) – Email отправителя.</p></li>
+<li><p><strong>password</strong> (<em>str</em>) – Пароль отправителя.</p></li>
+<li><p><strong>recipients</strong> (<em>list</em>) – Список получателей.</p></li>
+<li><p><strong>subject_prefix</strong> (<em>str</em><em>, </em><em>optional</em>) – Префикс для темы письма. По умолчанию «Критическая ошибка».</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+<section id="id5">
+<h2>Вспомогательные методы<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h2>
+<section id="temporary-log-level">
+<h3>temporary_log_level<a class="headerlink" href="#temporary-log-level" title="Ссылка на этот заголовок">¶</a></h3>
+<dl class="py method">
+<dt class="sig sig-object py" id="id6">
+<span class="sig-prename descclassname"><span class="pre">MasterLogger.</span></span><span class="sig-name descname"><span class="pre">temporary_log_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.temporary_log_level"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#id6" title="Link to this definition">¶</a></dt>
+<dd><p>Контекстный менеджер для временного изменения уровня логирования.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>level</strong> (<em>str</em>) – Временный уровень логирования.</p>
+</dd>
+<dt class="field-even">Yields<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p>Использование:
+with logger.temporary_log_level(„DEBUG“):</p>
+<blockquote>
+<div><p># Здесь логирование будет на уровне DEBUG</p>
+</div></blockquote>
+<p># После выхода из контекста уровень вернется к предыдущему</p>
+</dd></dl>
+
+</section>
+<section id="log-exception">
+<h3>log_exception<a class="headerlink" href="#log-exception" title="Ссылка на этот заголовок">¶</a></h3>
+<dl class="py method">
+<dt class="sig sig-object py" id="id7">
+<span class="sig-prename descclassname"><span class="pre">MasterLogger.</span></span><span class="sig-name descname"><span class="pre">log_exception</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_info</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.log_exception"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#id7" title="Link to this definition">¶</a></dt>
+<dd><p>Логирование исключения с полной трассировкой стека.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>message</strong> (<em>str</em>) – Сообщение об ошибке.</p></li>
+<li><p><strong>exc_info</strong> (<em>bool</em><em>, </em><em>optional</em>) – Флаг для включения информации об исключении. По умолчанию True.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Использование:
+try:</p>
+<blockquote>
+<div><p># код, который может вызвать исключение</p>
+</div></blockquote>
+<dl class="simple">
+<dt>except Exception as e:</dt><dd><p>logger.log_exception(«Произошла ошибка»)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="log-function-call">
+<h3>log_function_call<a class="headerlink" href="#log-function-call" title="Ссылка на этот заголовок">¶</a></h3>
+<dl class="py method">
+<dt class="sig sig-object py" id="id8">
+<span class="sig-prename descclassname"><span class="pre">MasterLogger.</span></span><span class="sig-name descname"><span class="pre">log_function_call</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.log_function_call"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#id8" title="Link to this definition">¶</a></dt>
+<dd><p>Декоратор для автоматического логирования вызовов функций.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>log_args</strong> (<em>bool</em><em>, </em><em>optional</em>) – Флаг для логирования аргументов функции. По умолчанию True.</p></li>
+<li><p><strong>log_result</strong> (<em>bool</em><em>, </em><em>optional</em>) – Флаг для логирования результата функции. По умолчанию True.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат<span class="colon">:</span></dt>
+<dd class="field-even"><p>Декорированная функция.</p>
+</dd>
+<dt class="field-odd">Тип результата<span class="colon">:</span></dt>
+<dd class="field-odd"><p>function</p>
+</dd>
+</dl>
+<p>Использование:
+&#64;logger.log_function_call(log_args=True, log_result=False)
+def my_function(arg1, arg2):</p>
+<blockquote>
+<div><p># код функции</p>
+</div></blockquote>
+</dd></dl>
+
+</section>
+</section>
+<section id="id9">
+<h2>Методы логирования<a class="headerlink" href="#id9" title="Ссылка на этот заголовок">¶</a></h2>
+<section id="debug">
+<h3>debug<a class="headerlink" href="#debug" title="Ссылка на этот заголовок">¶</a></h3>
+<dl class="py method">
+<dt class="sig sig-object py" id="id10">
+<span class="sig-prename descclassname"><span class="pre">MasterLogger.</span></span><span class="sig-name descname"><span class="pre">debug</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.debug"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#id10" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="info">
+<h3>info<a class="headerlink" href="#info" title="Ссылка на этот заголовок">¶</a></h3>
+<dl class="py method">
+<dt class="sig sig-object py" id="id11">
+<span class="sig-prename descclassname"><span class="pre">MasterLogger.</span></span><span class="sig-name descname"><span class="pre">info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.info"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#id11" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="warning">
+<h3>warning<a class="headerlink" href="#warning" title="Ссылка на этот заголовок">¶</a></h3>
+<dl class="py method">
+<dt class="sig sig-object py" id="id12">
+<span class="sig-prename descclassname"><span class="pre">MasterLogger.</span></span><span class="sig-name descname"><span class="pre">warning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.warning"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#id12" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="error">
+<h3>error<a class="headerlink" href="#error" title="Ссылка на этот заголовок">¶</a></h3>
+<dl class="py method">
+<dt class="sig sig-object py" id="id13">
+<span class="sig-prename descclassname"><span class="pre">MasterLogger.</span></span><span class="sig-name descname"><span class="pre">error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.error"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#id13" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="critical">
+<h3>critical<a class="headerlink" href="#critical" title="Ссылка на этот заголовок">¶</a></h3>
+<dl class="py method">
+<dt class="sig sig-object py" id="id14">
+<span class="sig-prename descclassname"><span class="pre">MasterLogger.</span></span><span class="sig-name descname"><span class="pre">critical</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.critical"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#id14" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+<section id="id15">
+<h2>Примеры использования<a class="headerlink" href="#id15" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Базовое использование:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">profi_log</span> <span class="kn">import</span> <span class="n">MasterLogger</span>
+
+<span class="c1"># Инициализация логгера</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="n">MasterLogger</span><span class="p">(</span><span class="s2">&quot;app.log&quot;</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="s2">&quot;DEBUG&quot;</span><span class="p">)</span>
+
+<span class="c1"># Настройка цветного консольного логирования</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">setup_colored_console_logging</span><span class="p">()</span>
+
+<span class="c1"># Использование логгера</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Это информационное сообщение&quot;</span><span class="p">)</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;Это предупреждение&quot;</span><span class="p">)</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;Это сообщение об ошибке&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Использование временного уровня логирования:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="n">logger</span><span class="o">.</span><span class="n">temporary_log_level</span><span class="p">(</span><span class="s2">&quot;DEBUG&quot;</span><span class="p">):</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Это отладочное сообщение&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Логирование исключений:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
+<span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">log_exception</span><span class="p">(</span><span class="s2">&quot;Произошла ошибка деления на ноль&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Использование декоратора для логирования вызовов функций:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@logger</span><span class="o">.</span><span class="n">log_function_call</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">example_function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">example_function</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">Profi Log</a></h1>
+
+
+
+
+
+
+
+
+<h3>Навигация</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Быстрый поиск</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, anxnas.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.4.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
