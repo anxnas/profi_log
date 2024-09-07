@@ -57,6 +57,38 @@
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="profi_log.MasterLogger.get_logger">
+<span class="sig-name descname"><span class="pre">get_logger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.get_logger"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#profi_log.MasterLogger.get_logger" title="Link to this definition">¶</a></dt>
+<dd><p>Создает и возвращает именованный логгер.</p>
+<p>Этот метод создает новый логгер с указанным именем, наследующий настройки
+корневого логгера (уровень логирования, обработчики и т.д.).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – Имя для нового логгера. Обычно соответствует имени модуля
+или компонента, использующего логгер.</p>
+</dd>
+<dt class="field-even">Результат<span class="colon">:</span></dt>
+<dd class="field-even"><p>Настроенный логгер с указанным именем.</p>
+</dd>
+<dt class="field-odd">Тип результата<span class="colon">:</span></dt>
+<dd class="field-odd"><p>logging.Logger</p>
+</dd>
+</dl>
+<p class="rubric">Пример</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">logger</span> <span class="o">=</span> <span class="n">master_logger</span><span class="o">.</span><span class="n">get_logger</span><span class="p">(</span><span class="s1">&#39;views&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Это сообщение из модуля views&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>Возвращаемый логгер наследует все настройки корневого логгера,
+включая уровень логирования и обработчики. Если вам нужны
+специфические настройки для конкретного логгера, вы можете
+изменить их после получения логгера.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="profi_log.MasterLogger.info">
 <span class="sig-name descname"><span class="pre">info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/profi_log/master_logger.html#MasterLogger.info"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#profi_log.MasterLogger.info" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
