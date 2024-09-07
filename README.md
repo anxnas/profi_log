@@ -21,31 +21,65 @@ pip install profi_log
 
 ## Использование
 
-Вот простой пример использования Profi Log:
+### Базовая настройка
+
+Создайте файл `log_config.py` для инициализации основного логгера:
 
 ```python
 from profi_log import MasterLogger
-#Инициализация логгера
-logger = MasterLogger("app.log", level="DEBUG")
-#Настройка цветного консольного логирования
-logger.setup_colored_console_logging()
-#Использование логгера
-logger.info("Это информационное сообщение")
-logger.warning("Это предупреждение")
-logger.error("Это сообщение об ошибке")
-#Использование временного уровня логирования
-with logger.temporary_log_level("DEBUG"):
+
+# Инициализация основного логгера
+master_logger = MasterLogger("app.log", level="INFO")
+master_logger.setup_colored_console_logging()
+```
+
+### Использование в разных модулях
+
+В файле `main.py`:
+
+```python
+from log_config import master_logger
+
+# Получаем логгер для main.py
+logger = master_logger.get_logger('main')
+
+def main():
+    logger.info("Начало выполнения программы")
+    # Ваш код здесь
+    logger.info("Программа завершена")
+
+if __name__ == "__main__":
+    main()
+```
+
+В файле `utils.py`:
+
+```python
+from log_config import master_logger
+
+# Получаем логгер для utils.py
+logger = master_logger.get_logger('utils')
+
+@master_logger.log_function_call()
+def process_data(data):
+    logger.info(f"Начало обработки данных: {data}")
+    result = sum(data)
+    logger.debug(f"Промежуточный результат: {result}")
+    return result * 2
+```
+
+### Дополнительные возможности
+
+```python
+# Временное изменение уровня логирования
+with master_logger.temporary_log_level("DEBUG"):
     logger.debug("Это отладочное сообщение")
-#Логирование исключений
+
+# Логирование исключений
 try:
     1 / 0
 except ZeroDivisionError:
     logger.log_exception("Произошла ошибка деления на ноль")
-#Использование декоратора для логирования вызовов функций
-@logger.log_function_call()
-def example_function(x, y):
-    return x + y
-result = example_function(3, 4)
 ```
 
 ## Документация
