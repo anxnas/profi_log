@@ -112,6 +112,34 @@ class MasterLogger:
         handler.setFormatter(formatter)
         self._logger.addHandler(handler)
 
+    def get_logger(self, name: str):
+        """
+        Создает и возвращает именованный логгер.
+
+        Этот метод создает новый логгер с указанным именем, наследующий настройки
+        корневого логгера (уровень логирования, обработчики и т.д.).
+
+        Args:
+            name (str): Имя для нового логгера. Обычно соответствует имени модуля
+                        или компонента, использующего логгер.
+
+        Returns:
+            logging.Logger: Настроенный логгер с указанным именем.
+
+        Example:
+            >>> logger = master_logger.get_logger('views')
+            >>> logger.info('Это сообщение из модуля views')
+
+        Note:
+            Возвращаемый логгер наследует все настройки корневого логгера,
+            включая уровень логирования и обработчики. Если вам нужны
+            специфические настройки для конкретного логгера, вы можете
+            изменить их после получения логгера.
+        """
+        logger = logging.getLogger(name)
+        logger.setLevel(self.level)
+        return logger
+
     @contextlib.contextmanager
     def temporary_log_level(self, level: str):
         """
